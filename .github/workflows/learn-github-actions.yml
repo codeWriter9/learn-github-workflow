@@ -12,6 +12,7 @@ jobs:
         with:
           java-version: '21'
           architecture: x64
+          distribution: 'temurin'
       - name: Java Compiler Version 
         run: javac -version
       - name: Java Runner Version check
