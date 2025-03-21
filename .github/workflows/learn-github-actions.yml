@@ -20,7 +20,7 @@ jobs:
       - name: Maven version check
         run: mvn --version
       - name: Maven Build
-        run: mvn clean install spring-boot:run
+        run: mvn clean compile test install package
 
       
 
