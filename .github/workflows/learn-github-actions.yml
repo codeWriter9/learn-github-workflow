@@ -19,6 +19,8 @@ jobs:
         run: java -version
       - name: Maven version check
         run: mvn --version
+      - name: Maven Build
+        run: mvn clean install spring-boot:run
 
       
 
