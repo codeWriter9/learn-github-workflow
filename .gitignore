@@ -51,4 +51,7 @@ target/*
 #intelliJ file(s)
 .idea/
 
-
+# Ignore vim files:
+*~
+*.swp
+*.swo
