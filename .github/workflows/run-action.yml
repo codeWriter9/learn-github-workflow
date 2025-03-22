@@ -1,5 +1,5 @@
 name: run-action
-run-name: ${{ github.actor }} is running GitHub Actions
+run-name: ${{ github.actor }} is running GitHub Action
 on:
   workflow_run:
     workflows:
