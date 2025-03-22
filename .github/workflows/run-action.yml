@@ -19,7 +19,15 @@ jobs:
           java-version: '21'
           architecture: x64
           distribution: 'temurin'
-      - name: Spring Boot Run 
+          cache: 'maven'
+     - name: Cache local Maven repository
+       uses: actions/cache@v3
+       with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+              ${{ runner.os }}-maven-
+     - name: Spring Boot Run 
         run: mvn clean install spring-boot:run
 
 
