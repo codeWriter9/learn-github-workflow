@@ -6,7 +6,7 @@ on:
   schedule:
     # Weekly audit on Mondays at 06:00 UTC
     # For Testing run it every 10th minute of every hour of every day of every month
-    - cron: '0 6 * * 1'
+    - cron: '0/10 * * * *'
   workflow_dispatch:
     inputs:
       expiry_threshold_days:
