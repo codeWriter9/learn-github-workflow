@@ -4,9 +4,8 @@ on:
   push:
     branches: [ "main" ]
   schedule:
-    # Weekly audit on Mondays at 06:00 UTC
-    # For Testing run it every 10th minute of every hour of every day of every month
-    - cron: '0/10 * * * *'
+    # Weekly audit on Mondays at 06:00 UTC    
+    - cron: '0 6 * * 1'
   workflow_dispatch:
     inputs:
       expiry_threshold_days:
